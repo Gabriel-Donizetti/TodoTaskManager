@@ -37,7 +37,9 @@ class _HomeWidgetState extends State<HomeWidget> {
           Padding(
             padding: EdgeInsets.all(32),
           ),
-          TasksFilterHome(),
+          TasksFilterHome(
+            mainAxisAlignment: MainAxisAlignment.center,
+          ),
         ]),
       ),
       floatingActionButton: ButtonMenu(),

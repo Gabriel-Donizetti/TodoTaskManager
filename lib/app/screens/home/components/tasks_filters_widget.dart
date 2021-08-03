@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class TasksFilterHome extends StatefulWidget {
-  const TasksFilterHome({Key? key}) : super(key: key);
+  const TasksFilterHome({Key? key, mainAxisAlignment}) : super(key: key);
 
   @override
   _TasksFilterHomeState createState() => _TasksFilterHomeState();
