@@ -11,7 +11,7 @@ class AppWidget extends StatefulWidget {
 }
 
 class _AppWidgetState extends State<AppWidget> {
-  bool isDark = true;
+  bool isDark = false;
 
   @override
   Widget build(BuildContext context) {
