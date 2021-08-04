@@ -11,6 +11,11 @@ class ListTasksHome extends StatefulWidget {
 class _ListTasksHomeState extends State<ListTasksHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ListView.builder(itemBuilder: (context, index) {
+      return ListTile(
+        title: Text('MTO foda mesmo pike'),
+        subtitle: Text('Mto foda subtitulo'),
+      );
+    });
   }
 }

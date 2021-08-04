@@ -12,6 +12,7 @@ class _TasksFilterHomeState extends State<TasksFilterHome> {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ElevatedButton(
           style: ButtonStyle(

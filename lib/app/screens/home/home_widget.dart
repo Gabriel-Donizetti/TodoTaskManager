@@ -32,15 +32,17 @@ class _HomeWidgetState extends State<HomeWidget> {
           style: TextStyle(fontSize: 32),
         ),
       ),
-      body: Center(
-        child: Column(children: [
-          Padding(
-            padding: EdgeInsets.all(32),
-          ),
-          TasksFilterHome(
-            mainAxisAlignment: MainAxisAlignment.center,
-          ),
-        ]),
+      body: Container(
+        child: Row(
+          children: [
+            Column(
+              children: [TasksFilterHome()],
+            ),
+            Column(
+              children: [ListTasksHome()],
+            )
+          ],
+        ),
       ),
       floatingActionButton: ButtonMenu(),
     );
