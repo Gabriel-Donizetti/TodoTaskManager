@@ -39,7 +39,14 @@ class _HomeWidgetState extends State<HomeWidget> {
               padding: EdgeInsets.all(32),
             ),
             TasksFilterHome(),
-            ListTasksHome(),
+            Padding(
+              padding: EdgeInsets.all(32),
+            ),
+            Container(
+              height: 300,
+              width: 500,
+              child: ListTasksHome(),
+            )
           ]),
         ),
       ),

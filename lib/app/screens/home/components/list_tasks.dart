@@ -12,9 +12,19 @@ class _ListTasksHomeState extends State<ListTasksHome> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(itemBuilder: (context, index) {
-      return ListTile(
-        title: Text('Ai karaio'),
-        subtitle: Text('Mto foda mesmo brabor'),
+      return Container(
+        height: 80,
+        width: 100,
+        child: ListTile(
+          title: Text(
+            'Comprar Cafézinho',
+            textAlign: TextAlign.center,
+          ),
+          subtitle: Text(
+            'Comprar café no condor',
+            textAlign: TextAlign.center,
+          ),
+        ),
       );
     });
   }
