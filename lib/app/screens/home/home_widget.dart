@@ -33,15 +33,14 @@ class _HomeWidgetState extends State<HomeWidget> {
         ),
       ),
       body: Container(
-        child: Row(
-          children: [
-            Column(
-              children: [TasksFilterHome()],
+        child: Center(
+          child: Column(children: [
+            Padding(
+              padding: EdgeInsets.all(32),
             ),
-            Column(
-              children: [ListTasksHome()],
-            )
-          ],
+            TasksFilterHome(),
+            ListTasksHome(),
+          ]),
         ),
       ),
       floatingActionButton: ButtonMenu(),
