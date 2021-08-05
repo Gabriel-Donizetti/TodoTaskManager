@@ -13,8 +13,8 @@ class _ListTasksHomeState extends State<ListTasksHome> {
   Widget build(BuildContext context) {
     return ListView.builder(itemBuilder: (context, index) {
       return ListTile(
-        title: Text('MTO foda mesmo pike'),
-        subtitle: Text('Mto foda subtitulo'),
+        title: Text('Ai karaio'),
+        subtitle: Text('Mto foda mesmo brabor'),
       );
     });
   }
