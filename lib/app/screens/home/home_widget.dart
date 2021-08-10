@@ -3,6 +3,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:todotaskmanager/app/screens/home/components/button_menu.dart';
 import 'package:todotaskmanager/app/screens/home/components/list_tasks.dart';
 import 'package:todotaskmanager/app/screens/home/components/tasks_filters_widget.dart';
+import 'package:todotaskmanager/app/widgets/appBar_widget.dart';
 //import 'package:todotask_app/app/screens/home/components/tasks_filters.dart';
 
 class HomeWidget extends StatefulWidget {
@@ -21,7 +22,7 @@ class _HomeWidgetState extends State<HomeWidget> {
             borderRadius: BorderRadius.all(Radius.circular(32))),
         backgroundColor: HexColor("#FFA500"),
         leading: Icon(
-          Icons.check_box_outlined,
+          Icons.check_box_outline_blank,
           size: 64,
         ),
         toolbarHeight: 100,
@@ -31,6 +32,7 @@ class _HomeWidgetState extends State<HomeWidget> {
           'Olá Gabriel',
           style: TextStyle(fontSize: 32),
         ),
+        actions: [Icon(Icons.build)],
       ),
       body: Container(
         child: Center(
