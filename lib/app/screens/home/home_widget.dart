@@ -3,7 +3,6 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:todotaskmanager/app/screens/home/components/button_menu.dart';
 import 'package:todotaskmanager/app/screens/home/components/list_tasks.dart';
 import 'package:todotaskmanager/app/screens/home/components/tasks_filters_widget.dart';
-import 'package:todotaskmanager/app/shared/style/text_styles.dart';
 //import 'package:todotask_app/app/screens/home/components/tasks_filters.dart';
 
 class HomeWidget extends StatefulWidget {
@@ -30,7 +29,7 @@ class _HomeWidgetState extends State<HomeWidget> {
         centerTitle: true,
         title: Text(
           'Olá Gabriel',
-          style: primaryTitle,
+          style: TextStyle(fontSize: 32),
         ),
       ),
       body: Container(
