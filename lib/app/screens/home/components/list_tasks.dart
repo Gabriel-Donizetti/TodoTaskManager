@@ -13,16 +13,21 @@ class _ListTasksHomeState extends State<ListTasksHome> {
   Widget build(BuildContext context) {
     return ListView.builder(itemBuilder: (context, index) {
       return Container(
-        height: 80,
+        decoration: BoxDecoration(),
+        height: 100,
         width: 100,
-        child: ListTile(
-          title: Text(
-            'Comprar Cafézinho',
-            textAlign: TextAlign.center,
-          ),
-          subtitle: Text(
-            'Comprar café no condor',
-            textAlign: TextAlign.center,
+        padding: EdgeInsets.all(16),
+        child: Card(
+          borderOnForeground: true,
+          child: ListTile(
+            title: Text(
+              'Comprar Cafézinho',
+              textAlign: TextAlign.center,
+            ),
+            subtitle: Text(
+              'Comprar café no condor',
+              textAlign: TextAlign.center,
+            ),
           ),
         ),
       );
