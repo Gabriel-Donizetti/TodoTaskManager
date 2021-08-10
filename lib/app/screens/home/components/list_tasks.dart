@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:todotaskmanager/app/shared/style/text_styles.dart';
 
 class ListTasksHome extends StatefulWidget {
   const ListTasksHome({Key? key}) : super(key: key);
@@ -19,10 +20,12 @@ class _ListTasksHomeState extends State<ListTasksHome> {
           title: Text(
             'Comprar Cafézinho',
             textAlign: TextAlign.center,
+            style: secondaryTitle,
           ),
           subtitle: Text(
             'Comprar café no condor',
             textAlign: TextAlign.center,
+            style: description,
           ),
         ),
       );
